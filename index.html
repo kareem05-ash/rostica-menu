@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e94e1b" />
+  <meta name="description" content="منيو مطعم الأصيل - شاورما وكشري ودجاج مقلي" />
+  <title>مطعم روستيكا</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ COVER PAGE ══ -->
+  <div class="cover-page" id="coverPage">
+    <div class="cover-bg"></div>
+    <div class="cover-overlay"></div>
+    <div class="cover-content">
+      <div class="cover-logo-wrap">
+        <div class="cover-logo-ring">
+          <span class="cover-logo-emoji">🍗</span>
+        </div>
+      </div>
+      <h1 class="cover-name">مطعم الأصيل</h1>
+      <p class="cover-tag">شاورما · دجاج مقلي · كشري · مشويات</p>
+      <div class="cover-badges">
+        <span class="cover-badge"><span>⭐</span> 4.8 تقييم</span>
+        <span class="cover-badge"><span>🕐</span> يومياً ١٠ص–١٢م</span>
+        <span class="cover-badge"><span>📍</span> المعادي، القاهرة</span>
+      </div>
+      <button class="cover-cta" id="coverCta">
+        <span>اعرض المنيو</span>
+        <span class="cover-cta-arrow">↓</span>
+      </button>
+    </div>
+    <div class="cover-scroll-hint">اسحب للأسفل للمنيو</div>
+  </div>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <div class="header-bg"></div>
+    <div class="header-inner">
+      <div class="header-logo">
+        <div class="logo-icon">🍗</div>
+        <div class="logo-text">
+          <h1 class="restaurant-name">مطعم الأصيل</h1>
+          <p class="restaurant-tag">شاورما · دجاج · كشري</p>
+        </div>
+      </div>
+      <div class="header-status">
+        <span class="status-dot"></span>
+        <span class="status-text">مفتوح الآن</span>
+      </div>
+    </div>
+
+    <!-- Rating bar -->
+    <div class="header-stats">
+      <div class="stat">
+        <span class="stat-icon">⭐</span>
+        <span>4.8</span>
+      </div>
+      <div class="stat-sep">·</div>
+      <div class="stat">
+        <span class="stat-icon">🕐</span>
+        <span>يومياً ١٠ص - ١٢م</span>
+      </div>
+      <div class="stat-sep">·</div>
+      <div class="stat">
+        <span class="stat-icon">📍</span>
+        <span>المعادي</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ STICKY CATEGORY NAV ══ -->
+  <nav class="cat-nav" id="catNav" role="navigation" aria-label="فئات المنيو">
+    <div class="cat-track" id="catTrack">
+      <button class="cat-btn active" data-target="offers">
+        <span class="cat-emoji">🔥</span>
+        <span>العروض</span>
+      </button>
+      <button class="cat-btn" data-target="sandwiches">
+        <span class="cat-emoji">🥙</span>
+        <span>سندوتشات</span>
+      </button>
+      <button class="cat-btn" data-target="meals">
+        <span class="cat-emoji">🍽️</span>
+        <span>وجبات</span>
+      </button>
+      <button class="cat-btn" data-target="extras">
+        <span class="cat-emoji">🍟</span>
+        <span>إضافات</span>
+      </button>
+      <button class="cat-btn" data-target="drinks">
+        <span class="cat-emoji">🥤</span>
+        <span>مشروبات</span>
+      </button>
+      <button class="cat-btn" data-target="desserts">
+        <span class="cat-emoji">🍮</span>
+        <span>حلويات</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ MENU CONTENT ══ -->
+  <main class="menu-main">
+
+    <!-- OFFERS -->
+    <section class="menu-section" id="offers">
+      <div class="section-label offers-label">
+        <span class="section-emoji">🔥</span>
+        <h2>عروض اليوم</h2>
+        <span class="offers-badge-live">جديد</span>
+      </div>
+
+      <!-- Horizontal scroll offers strip -->
+      <div class="offers-strip">
+
+        <article class="offer-card" style="--offer-color:#e94e1b;">
+          <div class="offer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80" alt="عرض الدجاج" class="offer-img" loading="eager" decoding="async" />
+          </div>
+          <div class="offer-body">
+            <span class="offer-tag">🔥 الأقوى</span>
+            <h3 class="offer-name">وجبة الدجاج الكاملة</h3>
+            <p class="offer-desc">٢ قطعة + بطاطس + مشروب</p>
+            <div class="offer-pricing">
+              <span class="offer-old-price">٩٥ جنيه</span>
+              <span class="offer-new-price">٧٥ جنيه</span>
+            </div>
+            <button class="offer-btn order-btn">+ أضف للطلب</button>
+          </div>
+        </article>
+
+        <article class="offer-card" style="--offer-color:#c13a10;">
+          <div class="offer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=600&q=80" alt="عرض الشاورما" class="offer-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="offer-body">
+            <span class="offer-tag">⚡ محدود</span>
+            <h3 class="offer-name">شاورما دجاج × ٢</h3>
+            <p class="offer-desc">سندوتشان شاورما + عصير ليمون</p>
+            <div class="offer-pricing">
+              <span class="offer-old-price">٩٢ جنيه</span>
+              <span class="offer-new-price">٧٠ جنيه</span>
+            </div>
+            <button class="offer-btn order-btn">+ أضف للطلب</button>
+          </div>
+        </article>
+
+        <article class="offer-card" style="--offer-color:#b45309;">
+          <div class="offer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="عرض العيلة" class="offer-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="offer-body">
+            <span class="offer-tag">👨‍👩‍👧 عيلة</span>
+            <h3 class="offer-name">طبق كشري كبير</h3>
+            <p class="offer-desc">كشري كبير + ٢ مشروب غازي</p>
+            <div class="offer-pricing">
+              <span class="offer-old-price">٦٥ جنيه</span>
+              <span class="offer-new-price">٥٠ جنيه</span>
+            </div>
+            <button class="offer-btn order-btn">+ أضف للطلب</button>
+          </div>
+        </article>
+
+        <article class="offer-card" style="--offer-color:#7c3aed;">
+          <div class="offer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="عرض المشويات" class="offer-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="offer-body">
+            <span class="offer-tag">🥩 مميز</span>
+            <h3 class="offer-name">وجبة مشويات مزدوجة</h3>
+            <p class="offer-desc">كفتة + شيش طاووق + سلطة + أرز</p>
+            <div class="offer-pricing">
+              <span class="offer-old-price">١٤٠ جنيه</span>
+              <span class="offer-new-price">١١٠ جنيه</span>
+            </div>
+            <button class="offer-btn order-btn">+ أضف للطلب</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SANDWICHES -->
+    <section class="menu-section" id="sandwiches">
+      <div class="section-label">
+        <span class="section-emoji">🥙</span>
+        <h2>سندوتشات</h2>
+      </div>
+
+      <div class="menu-list">
+
+        <article class="dish-card featured">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=600&q=80"
+              alt="شاورما دجاج"
+              class="dish-img"
+              loading="eager"
+              decoding="async"
+            />
+            <span class="dish-badge">الأكثر طلباً</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">شاورما دجاج</h3>
+              <span class="dish-price">٣٥ جنيه</span>
+            </div>
+            <p class="dish-desc">دجاج مشوي بالبهارات الشامية، طحينة، خضار طازجة، خبز صاج</p>
+            <div class="dish-footer">
+              <span class="dish-tag spicy">🌶 حار</span>
+              <button class="order-btn" aria-label="اطلب شاورما دجاج">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=600&q=80"
+              alt="شاورما لحم"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">شاورما لحم</h3>
+              <span class="dish-price">٤٥ جنيه</span>
+            </div>
+            <p class="dish-desc">لحم عجل مشوي، ثوم، خل، بطاطس، ثوميّة</p>
+            <div class="dish-footer">
+              <span class="dish-tag"></span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&q=80"
+              alt="سندوتش فيليه"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">سندوتش فيليه</h3>
+              <span class="dish-price">٣٠ جنيه</span>
+            </div>
+            <p class="dish-desc">فيليه دجاج مقلي كريسبي، خس، مايونيز، خبز برجر طازج</p>
+            <div class="dish-footer">
+              <span class="dish-tag new">✨ جديد</span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80"
+              alt="سندوتش كفتة"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">سندوتش كفتة</h3>
+              <span class="dish-price">٢٨ جنيه</span>
+            </div>
+            <p class="dish-desc">كفتة لحم مشوي، بصل، بقدونس، صلصة طماطم</p>
+            <div class="dish-footer">
+              <span class="dish-tag"></span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MEALS -->
+    <section class="menu-section" id="meals">
+      <div class="section-label">
+        <span class="section-emoji">🍽️</span>
+        <h2>وجبات</h2>
+      </div>
+
+      <div class="menu-list">
+
+        <article class="dish-card featured">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80"
+              alt="وجبة دجاج مقلي"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="dish-badge">الأفضل قيمة</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">وجبة دجاج مقلي</h3>
+              <span class="dish-price">٧٥ جنيه</span>
+            </div>
+            <p class="dish-desc">٢ قطعة دجاج مقلي كريسبي + بطاطس + كول سلو + مشروب</p>
+            <div class="dish-footer">
+              <span class="dish-tag offer">🔥 عرض</span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80"
+              alt="طبق كشري"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">طبق كشري</h3>
+              <span class="dish-price">٢٥ جنيه</span>
+            </div>
+            <p class="dish-desc">أرز، عدس، مكرونة، بصل مقلي، صلصة حارة، دقة</p>
+            <div class="dish-footer">
+              <span class="dish-tag veg">🌱 نباتي</span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
+              alt="وجبة مشويات"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">وجبة مشويات</h3>
+              <span class="dish-price">١١٠ جنيه</span>
+            </div>
+            <p class="dish-desc">كفتة + شيش طاووق + كباب + أرز + سلطة + خبز</p>
+            <div class="dish-footer">
+              <span class="dish-tag"></span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+              alt="طبق فتة"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">طبق فتة</h3>
+              <span class="dish-price">٥٥ جنيه</span>
+            </div>
+            <p class="dish-desc">أرز، خبز مقلي، لحم، صلصة طماطم، ثوم، خل</p>
+            <div class="dish-footer">
+              <span class="dish-tag"></span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXTRAS -->
+    <section class="menu-section" id="extras">
+      <div class="section-label">
+        <span class="section-emoji">🍟</span>
+        <h2>إضافات</h2>
+      </div>
+
+      <!-- Compact grid for extras -->
+      <div class="extras-grid">
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&q=80" alt="بطاطس" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">بطاطس</span>
+            <span class="extra-price">١٥ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="كول سلو" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">كول سلو</span>
+            <span class="extra-price">١٢ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&q=80" alt="خبز بالثوم" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">خبز بالثوم</span>
+            <span class="extra-price">١٠ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="شوربة عدس" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">شوربة عدس</span>
+            <span class="extra-price">٢٠ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1576866209830-589e1bfbaa4d?w=400&q=80" alt="سلطة خضراء" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">سلطة خضراء</span>
+            <span class="extra-price">١٨ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&q=80" alt="صوص ثوميّة" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">ثوميّة إضافي</span>
+            <span class="extra-price">٥ جنيه</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DRINKS -->
+    <section class="menu-section" id="drinks">
+      <div class="section-label">
+        <span class="section-emoji">🥤</span>
+        <h2>مشروبات</h2>
+      </div>
+
+      <div class="extras-grid">
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&q=80" alt="بيبسي" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">مشروب غازي</span>
+            <span class="extra-price">١٥ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80" alt="عصير ليمون" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">عصير ليمون</span>
+            <span class="extra-price">٢٢ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&q=80" alt="عصير مانجو" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">عصير مانجو</span>
+            <span class="extra-price">٢٥ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="مياه" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">مياه معدنية</span>
+            <span class="extra-price">٨ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&q=80" alt="شاي" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">شاي / قهوة</span>
+            <span class="extra-price">١٢ جنيه</span>
+          </div>
+        </article>
+
+        <article class="extra-card">
+          <div class="extra-img-wrap">
+            <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=400&q=80" alt="عصير قصب" class="extra-img" loading="lazy" decoding="async" />
+          </div>
+          <div class="extra-info">
+            <span class="extra-name">عصير قصب</span>
+            <span class="extra-price">١٨ جنيه</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DESSERTS -->
+    <section class="menu-section" id="desserts">
+      <div class="section-label">
+        <span class="section-emoji">🍮</span>
+        <h2>حلويات</h2>
+      </div>
+
+      <div class="menu-list">
+
+        <article class="dish-card featured">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80"
+              alt="كنافة"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="dish-badge">الأشهر</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">كنافة بالجبن</h3>
+              <span class="dish-price">٣٥ جنيه</span>
+            </div>
+            <p class="dish-desc">كنافة بالجبن العكاوي، قطر، فستق، ساخنة طازجة</p>
+            <div class="dish-footer">
+              <span class="dish-tag new">✨ مميز</span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80"
+              alt="أم علي"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">أم علي</h3>
+              <span class="dish-price">٣٠ جنيه</span>
+            </div>
+            <p class="dish-desc">أم علي بالمكسرات والكريمة، ساخنة من الفرن</p>
+            <div class="dish-footer">
+              <span class="dish-tag"></span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80"
+              alt="بسبوسة"
+              class="dish-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dish-info">
+            <div class="dish-row">
+              <h3 class="dish-name">بسبوسة بالقشطة</h3>
+              <span class="dish-price">٢٥ جنيه</span>
+            </div>
+            <p class="dish-desc">بسبوسة طازجة بالقشطة والمكسرات</p>
+            <div class="dish-footer">
+              <span class="dish-tag veg">🌱 نباتي</span>
+              <button class="order-btn">+ أضف للطلب</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ RESTAURANT INFO ══ -->
+  <section class="info-section">
+    <h2 class="info-title">معلومات المطعم</h2>
+
+    <div class="info-grid">
+      <a class="info-card" href="tel:+201001234567">
+        <span class="info-icon">📞</span>
+        <div>
+          <span class="info-label">اتصل بنا</span>
+          <span class="info-value" dir="ltr">+20 100 123 4567</span>
+        </div>
+      </a>
+
+      <a class="info-card" href="https://wa.me/201001234567" target="_blank" rel="noopener">
+        <span class="info-icon">💬</span>
+        <div>
+          <span class="info-label">واتساب</span>
+          <span class="info-value">اطلب الآن</span>
+        </div>
+      </a>
+
+      <a class="info-card" href="https://maps.google.com/?q=مطعم+الأصيل+المعادي+القاهرة" target="_blank" rel="noopener">
+        <span class="info-icon">📍</span>
+        <div>
+          <span class="info-label">الموقع</span>
+          <span class="info-value">المعادي، القاهرة</span>
+        </div>
+      </a>
+
+      <div class="info-card">
+        <span class="info-icon">🕐</span>
+        <div>
+          <span class="info-label">أوقات العمل</span>
+          <span class="info-value">يومياً ١٠ ص – ١٢ م</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <p>© ٢٠٢٤ مطعم الأصيل · جميع الحقوق محفوظة</p>
+    <p class="footer-small">الأسعار شاملة الضريبة · يُرجى إبلاغنا عن أي حساسية غذائية</p>
+  </footer>
+
+  <!-- ══ FLOATING WHATSAPP ══ -->
+  <a
+    class="whatsapp-fab"
+    href="https://wa.me/201001234567?text=مرحباً، أريد الطلب من المنيو"
+    target="_blank"
+    rel="noopener"
+    aria-label="اطلب عبر واتساب"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>اطلب الآن</span>
+  </a>
+
+  <!-- ══ ORDER TOAST ══ -->
+  <div class="toast" id="orderToast" role="alert" aria-live="polite">
+    ✅ تمت الإضافة للطلب
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
